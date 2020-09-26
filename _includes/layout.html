@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  padding: 2em;
+  font-size: 1.2em;
+  background: SEASHELL;
+}
+
+details {
+  font-family: 'IBM Plex Mono', monospace;
+  background: LEMONCHIFFON;
+  // border: 3px solid red;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+details[open] {
+  background: pink;
+}
+summary {
+  background: yellow;
+  padding: 0.5em;
+  cursor: pointer;
+  outline: 0;
+}
+summary:focus {
+  outline: none;
+}
+/* Details Marker */
+summary {list-style-type: none; }
+summary::-webkit-details-marker { display:none; }
+
+.answer {
+  background: gold;
+  padding: 0.5em;
+}
+</style>
+
+<header>Questions</header>
+
+{{content}}
+
+<footer>by Thomas Mak</footer>
