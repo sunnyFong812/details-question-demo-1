@@ -1,11 +1,10 @@
 ---
 layout: layout
 ---
-<details>
-  <summary>蘋果</summary>
-  <div class="answer">Apple</div>
-</details>
-<details>
-  <summary>電腦</summary>
-  <div class="answer">Computer</div>
-</details>
+
+{%- for post in collections.vocab -%}
+  <details>
+    <summary>{{ post.data.title }}</summary>
+    <div class="answer">{{post.templateContent}}</div>
+  </details>
+{%- endfor -%}
